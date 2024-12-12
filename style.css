@@ -4,20 +4,20 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.info-field {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.info-field img {
     width: 100%;
 }
-.aaa .more_inf {
+.info-field .more-inf {
     font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
-  .aaa {
+  .info-field {
       text-align: center;
   }
 }
@@ -136,10 +136,10 @@ ul#completed-tasks label {
 ul li input[type=text] {
     display: none
 }
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
     display: inline-block;
     width: 224px
 }
-ul li.editMode label {
+ul li.edit-mode label {
     display: none;
 }
