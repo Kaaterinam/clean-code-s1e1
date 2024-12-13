@@ -4,24 +4,24 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.info-field {
+.info-section {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.info-field img {
+.info-section img {
     width: 100%;
 }
-.info-field .more-inf {
+.info-section .more-inf {
     font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
-  .info-field {
+  .info-section {
       text-align: center;
   }
 }
-.centered-main-page-element {
+.main-task-container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task-input-wrapper {
     display: flex;
 }
 ul {
@@ -127,7 +127,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed-tasks-list label {
     text-decoration: line-through
     color: #888;
 }
