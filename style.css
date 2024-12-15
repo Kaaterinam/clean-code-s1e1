@@ -77,8 +77,8 @@
     border: 1px solid #dDd;
     background: #FFF;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
     color: #888;
+    font-family: Lato, sans-serif;
 }
 .task-input[type="text"]:focus {
     color: #333;
