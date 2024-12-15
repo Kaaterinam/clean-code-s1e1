@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -34,14 +34,14 @@ body {
 .task-input-wrap {
     display: flex;
 }
-ul {
+.task-list {
     margin: 0;
     padding: 0px;
 }
-li, h3 {
+.task-list-enum, .task-name {
     list-style: none;
 }
-input,button{
+.task-input,button{
     outline: none;
 }
 button {
@@ -58,7 +58,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
+.task-name,
 label[for='new-task'] {
     color: #333;
     font-weight: 700;
@@ -68,7 +68,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.task-input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -80,7 +80,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task-input[type="text"]:focus {
     color: #333;
 }
 
@@ -94,7 +94,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.task-list-enum {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -102,19 +102,19 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.task-list-enum  > * {
     vertical-align: middle;
 }
-li > input[type="checkbox"] {
+.task-list-enum  > .task-input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.task-list-enum  > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li > input[type="text"] {
+.task-list-enum  > .task-input[type="text"] {
     width: 226px
 }
 button.task-del-btn img {
@@ -127,19 +127,19 @@ button.task-del-btn img:hover {
 }
 
 /* Completed */
-ul#completed-tasks-list label {
+#completed-tasks-list label {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task-list .task-list-enum .task-input[type=text] {
     display: none
 }
-ul li.task-edit input[type=text] {
+.task-list .task-list-enum.task-edit .task-input[type=text] {
     display: inline-block;
     width: 224px
 }
-ul li.task-edit label {
+.task-list .task-list-enum.task-edit label {
     display: none;
 }
