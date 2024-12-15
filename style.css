@@ -136,7 +136,8 @@
 }
 
 /* Edit Task */
-.task-list .task-list-enum
+.task-list
+.task-list-enum
 .task-input[type=text] {
     display: none;
 }
