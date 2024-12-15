@@ -17,9 +17,9 @@
     font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
-  .info-section {
+    .info-section {
       text-align: center;
-  }
+    }
 }
 .main-task-container {
     display: block;
