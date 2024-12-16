@@ -14,7 +14,7 @@
     width: 100%;
 }
 .info-section ,
-.more-inf {
+.info-section__link {
     font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
@@ -32,18 +32,18 @@
     display: inline-block;
     flex-grow: 1;
 }
-.task-input-wrap {
+.task__input-wrap {
     display: flex;
 }
-.task-list {
+.task-list__items {
     margin: 0;
     padding: 0px;
 }
 .task-list-enum,
-.task-name {
+.task-list__title {
     list-style: none;
 }
-.task-input,
+.task__input,
 .task-btn{
     outline: none;
 }
@@ -61,8 +61,8 @@
 }
 
 /* Heading */
-.task-name,
-.task-label[for='new-task'] {
+.task-list__title,
+.task__label[for='new-task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -71,7 +71,7 @@
     margin: 0;
     text-transform: uppercase;
 }
-.task-input[type="text"] {
+.task__input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -83,12 +83,12 @@
     color: #888;
     font-family: Lato, sans-serif;
 }
-.task-input[type="text"]:focus {
+.task__input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
-.task-label[for='new-task'] {
+.task__label[for='new-task'] {
     display: block;
     margin: 0 0 20px;
 }
@@ -108,47 +108,47 @@
 .task-list-enum  > * {
     vertical-align: middle;
 }
-.task-list-enum  > .task-input[type="checkbox"] {
+.task-list-enum  > .task__input[type="checkbox"] {
     margin: 0 10px;
 }
-.task-list-enum  > .task-label {
+.task-list-enum  > .task__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-.task-list-enum  > .task-input[type="text"] {
+.task-list-enum  > .task__input[type="text"] {
     width: 226px;
 }
-.task-btn.task-del-btn img {
+.task-btn.task-list__del-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.task-btn.task-del-btn img:hover {
+.task-btn.task-list__del-btn img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks-list .task-label {
+#completed-tasks-list .task__label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.task-list
+.task-list__items
 .task-list-enum
-.task-input[type=text] {
+.task__input[type=text] {
     display: none;
 }
-.task-list
-.task-list-enum.task-edit
-.task-input[type=text] {
+.task-list__items
+.task-list-enum.task-list__item
+.task__input[type=text] {
     display: inline-block;
     width: 224px;
 }
-.task-list
-.task-list-enum.task-edit
-.task-label {
+.task-list__items
+.task-list-enum.task-list__item
+.task__label {
     display: none;
 }
